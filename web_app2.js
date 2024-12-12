@@ -2,7 +2,7 @@ const url = require('url');
 const http = require('http');
 const { MongoClient, ServerApiVersion } = require("mongodb");
 
-
+const port = process.env.PORT || 8080;
 http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     let reqUrlParts = url.parse(req.url, true);
@@ -88,4 +88,4 @@ http.createServer((req, res) => {
     }
 
 
-}).listen(8080);
+}).listen(port);
