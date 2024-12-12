@@ -5,6 +5,11 @@
   "scripts": {
     "start": "node web_app2.js"
   },
+  "dependencies": {
+    "mongodb": "^4.5.0",
+    "url": "0.11.0",      
+    "http": "0.0.1"      
+  },
   "author": "",
   "license": "ISC",
   "description": ""
