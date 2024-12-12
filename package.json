@@ -3,7 +3,7 @@
   "version": "23.1.0",
   "main": "web_app2.js",
   "scripts": {
-    "test": "start"
+    "start": "node web_app2.js"
   },
   "author": "",
   "license": "ISC",
