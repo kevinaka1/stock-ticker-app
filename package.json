@@ -1,0 +1,11 @@
+{
+  "name": "my-app",
+  "version": "23.1.0",
+  "main": "web_app2.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
