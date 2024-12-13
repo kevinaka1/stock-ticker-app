@@ -47,6 +47,7 @@ http.createServer((req, res) => {
                 else if (qobj.tickerOrCompany === "ticker_radio") {
                     query = { "stock_ticker": `/ ${qobj.ticker} /` };
                 }
+                console.log(query);
                 else {
                     res.write("You didn't choose whether you wanted to search based on ticker or company name.");
                 }
