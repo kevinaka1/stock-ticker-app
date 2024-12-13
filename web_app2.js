@@ -47,11 +47,10 @@ http.createServer((req, res) => {
                 else if (qobj.tickerOrCompany === "ticker_radio") {
                     query = { "stock_ticker": new RegExp(qobj.ticker, "i") };
                 }
-                console.log(query);
                 else {
                     res.write("You didn't choose whether you wanted to search based on ticker or company name.");
                 }
-
+                console.log(query);
                 if (query != null) {
                     const companies = await publicCompanies.find(query).toArray();
 
