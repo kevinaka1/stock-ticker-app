@@ -42,10 +42,10 @@ http.createServer((req, res) => {
                 const publicCompanies = dbObj.collection("PublicCompanies");
                 let query = null;
                 if (qobj.tickerOrCompany === "company_radio") {
-                    query = { "company_name": `${/ qobj.company /}` };
+                    query = { "company_name": `/ ${qobj.company} /` };
                 }
                 else if (qobj.tickerOrCompany === "ticker_radio") {
-                    query = { "stock_ticker": `${/ qobj.ticker /}` };
+                    query = { "stock_ticker": `/ ${qobj.ticker} /` };
                 }
                 else {
                     res.write("You didn't choose whether you wanted to search based on ticker or company name.");
